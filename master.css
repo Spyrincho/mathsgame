@@ -1,0 +1,111 @@
+#head{
+  text-align: center;
+  color: purple;
+}
+
+#feedback{
+  max-height: 440px;
+}
+
+body{
+  background-color: white;
+  background-image: url("movie14_wallpaper3_1920.jpg");
+  object-fit: fill;
+}
+#container{
+  background-color: white;
+  width: 600px;
+  border: 2px;
+  border-style: groove groove groove groove;
+  border-color: #ff69b4  ;
+  border-radius: 50px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#myAssignment{
+  font-size: 80px;
+}
+#myAnswer{
+  width: 2em;
+  height: 2em;
+  font-size: 5em;
+  text-align: center;
+}
+#goedFout{
+  opacity: 0;
+}
+footer{
+    position: absolute;
+    bottom:0;
+}
+#next{
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1174px) {
+    #container {
+        grid-template-rows: repeat(11, 4vw);
+    }
+}
+
+
+@media only screen and (max-width: 984px) {
+    #container {
+        grid-template-rows: repeat(11, 5vw);
+    }
+}
+
+@media only screen and (max-width: 792px) {
+    #container {
+        grid-template-rows: repeat(11, 6vw);
+    }
+}
+
+@media only screen and (max-width: 658px) {
+    #container {
+        grid-template-rows: repeat(11, 7vw);
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #container {
+        grid-template-rows: repeat(11, 8vw);
+    }
+
+    #head {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+
+    #myAssignment {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #myAnswer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+
+    #feedback {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    #container {
+        grid-template-rows: repeat(11, 10vw);
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    #container {
+        grid-template-rows: repeat(11, 12vw);
+    }
+}
